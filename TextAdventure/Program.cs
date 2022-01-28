@@ -10,6 +10,13 @@ bool Gewonnen = false;
 string Ort = "Gegenstandsauswahl";
 string? Sache1, Sache2, Sache3;
 
+ConsoleColor[] consoleColors = new ConsoleColor[]
+{
+    ConsoleColor.Red,
+    ConsoleColor.Blue,
+    ConsoleColor.Yellow
+};
+int wordCount = 0;
 
 var startseite = new Startseite();
 Ort = startseite.Execute();
@@ -505,7 +512,7 @@ void E3()
 void E4()
 {
     Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.WriteLine("Super, du hast bis jetzt alles richtig gemacht. Nun baust du dir ein Floß aus Palmen. Einige Zeit später ist das Floß fertig gebaut, jedoch als du losfahren möchtest siehst du eine dunkle Wolke am Himmel. Möchtest du trotzdem fahren?");
+    SlowWriteLine("Super, du hast bis jetzt alles richtig gemacht. Nun baust du dir ein Floß aus Palmen. Einige Zeit später ist das Floß fertig gebaut, jedoch als du losfahren möchtest siehst du eine dunkle Wolke am Himmel. Möchtest du trotzdem fahren?");
     Console.ForegroundColor = ConsoleColor.White;
     Console.WriteLine("                                        ___    ,'\"\"\"\"'.");
     Console.WriteLine("                                    ,\"\"\"   \"\"\"\"'      `.");
@@ -829,7 +836,19 @@ void E7()
     }
 }
 
-
+void SlowWriteLine(string message)
+{
+    var words = message.Split(' ');
+    foreach (var word in words)
+    {
+        wordCount++;
+        Console.ForegroundColor = consoleColors[wordCount % 3];
+        Console.Write(word);
+        Console.Write(" ");
+        Thread.Sleep(100);
+    }
+    Console.WriteLine("");
+}
 
 
 
