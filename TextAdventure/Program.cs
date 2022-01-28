@@ -13,7 +13,7 @@ string? Sache1, Sache2, Sache3;
 ConsoleColor[] consoleColors = new ConsoleColor[]
 {
     ConsoleColor.Red,
-    ConsoleColor.Blue,
+    ConsoleColor.Magenta,
     ConsoleColor.Yellow
 };
 int wordCount = 0;
@@ -70,7 +70,7 @@ if(gameOver)
 }
 else
 {
-    Console.ForegroundColor = ConsoleColor.Blue;
+    Console.ForegroundColor = ConsoleColor.Green;
     Console.WriteLine("Du hast gewonnen!");
 
 }
@@ -81,59 +81,14 @@ else
 
 void Messerfrage()
 {
-    Console.ForegroundColor = ConsoleColor.Red;
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.Write("Sicher, ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.Write(" dass ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.Write(" du ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.Write(" kein ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.Write(" Messer ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.Write(" mitnehmen ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.WriteLine(" möchtest?");
-    Thread.Sleep(100);
+    SlowWriteLine("Sicher, dass du kein Messer mitnehmen möchtest?");
+    
     Console.ForegroundColor = ConsoleColor.White;
     string? Antwort = Console.ReadLine();
     if (Antwort == Ja || Antwort == Jo)
     {
-        Console.ForegroundColor = ConsoleColor.Red;
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.Write("Dann ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.Write(" bin ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.Write(" ich ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.Write("gespannt, ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.Write(" ob ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.Write(" du ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.Write(" überleben ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.WriteLine(" wirst");
-        Thread.Sleep(100);
+        SlowWriteLine("Dann bin ich gespant, ob du überleben wirst");
+        
 
 
 
@@ -147,171 +102,20 @@ void Messerfrage()
 
 void E1()
 {
+
+
+    SlowWriteLine("Als nächstes musst du dich entscheiden, ob du dich zuerst um die Nahrungssuche oder um eine Unterkunft kümmerst");
+
     
-    
-
-
-    Console.ForegroundColor = ConsoleColor.Red;
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.Write("Als ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.Write(" nächstes ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.Write(" musst ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.Write("du ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.Write(" dich ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.Write(" entscheiden, ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.Write(" ob ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.Write(" du");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.Write(" dich");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.Write("zuerst ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.Write(" um ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.Write(" die ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.Write("Nahrungssuche ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.Write(" oder ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.Write(" um");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.Write(" eine ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.Write(" Unterkunft ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.Write(" kümmern ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.WriteLine(" wirst");
-    Thread.Sleep(100);
-
 
     Console.ForegroundColor = ConsoleColor.Green;
     string? E1 = Console.ReadLine();
 
     if (E1 == Nahrungssuche)
     {
-        
 
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.Write("Du ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.Write("hättest ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.Write(" dich ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.Write(" zuerst ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.Write("mit ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.Write(" der ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.Write(" Unterkunft ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.Write(" ausseinandersetzen ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.Write(" sollen,");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.Write(" da ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.Write("ein");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.Write(" starkes ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.Write(" Unwetter ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.Write("aufzieht. ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.Write(" Aufgrund ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.Write(" dessen,");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.Write(" das ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.Write(" du ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.Write(" kein ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.Write(" Schutz");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.Write(" hast, ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.Write(" wirst ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.Write(" du");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.Write(" von ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.Write(" einem ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.Write(" Blitz");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.Write(" getroffen ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.Write(" und ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.Write(" bist");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.Write(" Tod ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine(" wirst");
-        Thread.Sleep(100);
+        SlowWriteLine("Du hättest dich zuerst mit der Unterkunft ausseinandersetzen sollen, da ein starkes Unwetter aufzieht. Aufgrund dessen das du kein Schutz hast wirst du von einem Blitz getroffen und bist Tod");
+        
 
 
 
@@ -334,40 +138,8 @@ void E1()
     }
     else if (E1 == "Unterkunft")
     {
+        SlowWriteLine("Du hast die richtige Entscheidung getroffen, da ein starkes Unwetter aufzieht");
         
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.Write(" Du, ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.Write(" hast ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.Write(" die");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.Write(" richtige ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.Write(" Entscheidung ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.Write(" getroffen,");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.Write(" da ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.Write(" ein ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.Write(" starkes");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.Write(" Unwetter ");
-        Thread.Sleep(100);
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine(" aufzieht");
-        Thread.Sleep(100);
 
         Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("        ------               _____");
@@ -398,93 +170,28 @@ void E1()
 
 void E2()
 {
-    
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.Write(" Nachdem ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.Write("das");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.Write(" Unweter ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.Write(" vorbei ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.Write("gezogen. ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.Write(" ist, ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.Write(" gehst,");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.Write(" du ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.Write(" auf ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.Write(" die ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.Write(" Suche");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.Write(" nach, ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.Write(" Nahrung ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.Write(" und");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.Write(" siehst ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.Write(" eine ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.Write(" dir");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.Write(" unbekannte ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.Write(" Fruht. ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.Write(" ist");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.Write(" du ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.WriteLine(" sie?");
-    Thread.Sleep(100);
+    SlowWriteLine("Nachdem das Unweter vorbei gezogen ist, gehst du auf die Suche nach Nahrung und siehst eine dir unbekannte Frucht. Ist du sie?");
+;    
     Console.ForegroundColor = ConsoleColor.White;
     Console.WriteLine("  \\");
     Console.WriteLine(" ()()");
     Console.WriteLine("()()()");
     Console.WriteLine(" ()()");
     Console.WriteLine("  ()");
-    Console.ForegroundColor = ConsoleColor.Magenta;
+    Console.ForegroundColor = ConsoleColor.White;
     Console.WriteLine("Antwort:");
     Console.ForegroundColor = ConsoleColor.Green;
     string? E3 = Console.ReadLine();
     if (E3 == Ja || E3 == Jo)
     {
         Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.WriteLine("Dann hast du Glück gehabt, die Frucht war nicht giftig");
+        SlowWriteLine("Dann hast du Glück gehabt, die Frucht war nicht giftig");
         Ort = "E4";
     }
     else if (E3 == "Nein")
     {
         Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.WriteLine("Dann musst du weiter suchen");
+        SlowWriteLine("Dann musst du weiter suchen");
         Ort = "E3";
     }
 }
@@ -492,19 +199,19 @@ void E2()
 void E3()
 {
     Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.WriteLine("Möchtest du dich auf die Lauer legen und versuchen ein Tier zu erlegen?");
+    SlowWriteLine("Möchtest du dich auf die Lauer legen und versuchen ein Tier zu erlegen?");
     Console.ForegroundColor = ConsoleColor.Green;
     string? E5 = Console.ReadLine();
     if (E5 == Ja || E5 == Jo)
     {
         Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.WriteLine("Dann liegst du jz auf der Lauer");
+        SlowWriteLine("Dann liegst du jz auf der Lauer");
         Ort = "E5";
     }
     else if (E5 == "Nein")
     {
         Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.WriteLine("Dann verhungerst du");
+        SlowWriteLine("Dann verhungerst du");
         Ort = "Tod";
     }
 }
@@ -540,14 +247,14 @@ void E4()
     Console.WriteLine("    _.-'      .-'   .-'  .'   .'");
     Console.WriteLine("_.-'       .-'    .'   .'    /");
     Console.WriteLine("       _.-'    .-'   .'    .'");
-    Console.ForegroundColor = ConsoleColor.Magenta;
+    Console.ForegroundColor = ConsoleColor.White;
     Console.WriteLine("Antwort:");
     Console.ForegroundColor = ConsoleColor.Green;
     string? E6 = Console.ReadLine();
     if (E6 == Ja || E6 == Jo)
     {
         Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.WriteLine("Schade, das wars mit dir, da dein Floß bei dem unwetter mitten auf dem Meer von einem Blitz getroffen wurde");
+        SlowWriteLine("Schade, das wars mit dir, da dein Floß bei dem unwetter mitten auf dem Meer von einem Blitz getroffen wurde");
         Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("    ___(                        )");
         Console.WriteLine("   (                          _)");
@@ -567,7 +274,7 @@ void E4()
     else if (E6 == "Nein")
     {
         Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.WriteLine("Gute Entscheidung. Du fährst einen Tag später los.");
+        SlowWriteLine("Gute Entscheidung. Du fährst einen Tag später los.");
         Ort = "E6";
     }
 
@@ -577,7 +284,7 @@ void E4()
 void E5()
 {
     Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.WriteLine("Vor dir läuft dieser Affe, möchtest du ihn töten?");
+    SlowWriteLine("Vor dir läuft dieser Affe, möchtest du ihn töten?");
     Console.ForegroundColor = ConsoleColor.White;
     Console.WriteLine("                __------__");
     Console.WriteLine("              /~          ~\\");
@@ -604,20 +311,20 @@ void E5()
 
 
 
-    Console.ForegroundColor = ConsoleColor.Magenta;
+    Console.ForegroundColor = ConsoleColor.White;
     Console.WriteLine("Antwort:");
     Console.ForegroundColor = ConsoleColor.Green;
     string ? E6 = Console.ReadLine();
 if (E6 == Ja || E6 == Jo)
 {
         Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.WriteLine("Während du versuchst den Affen zu töten, kommen hunderte von Affen zur Unterstützung und töten dich");
+        SlowWriteLine("Während du versuchst den Affen zu töten, kommen hunderte von Affen zur Unterstützung und töten dich");
     Ort = "Tod";
 }
 else if (E6 == "Nein")
 {
         Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.WriteLine("Währed du auf der Lauer liegst kommt dieser Skopion von hinten und sticht dich");
+        SlowWriteLine("Währed du auf der Lauer liegst kommt dieser Skopion von hinten und sticht dich");
         Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine(" ___    ___");
         Console.WriteLine("( _<    >_ )");
@@ -639,7 +346,7 @@ else if (E6 == "Nein")
 void E6()
 {
     Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.WriteLine("Als du auf dem offenem Meer bist, siest du in 100 Meter entfernung ein sinkendes schiff. Paddelst du gegen die Strömung an, um zu helfen oder lässt du dich weiter zum Festland treiben? wählst du Option 1 oder 2 ");
+    SlowWriteLine("Als du auf dem offenem Meer bist, siest du in 100 Meter entfernung ein sinkendes schiff. Paddelst du gegen die Strömung an, um zu helfen oder lässt du dich weiter zum Festland treiben? wählst du Option 1 oder 2 ");
     Console.ForegroundColor = ConsoleColor.White;
     Console.WriteLine("              |    |    |");
     Console.WriteLine("             )_)  )_)  )_)");
@@ -650,20 +357,20 @@ void E6()
     Console.WriteLine("  ^^^^^ ^^^^^^^^^^^^^^^^^^^^^");
     Console.WriteLine("    ^^^^      ^^^^     ^^^    ^^");
     Console.WriteLine("         ^^^^      ^^^");
-    Console.ForegroundColor = ConsoleColor.Magenta;
+    Console.ForegroundColor = ConsoleColor.White;
     Console.WriteLine("Antwort:");
     Console.ForegroundColor = ConsoleColor.Green;
     string? E7 = Console.ReadLine();
     if (E7 == "1")
     {
         Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.WriteLine("Du bist sehr hilfsbereit, jedoch ist die Strömung zu stark und du schaffst es nicht.");
+        SlowWriteLine("Du bist sehr hilfsbereit, jedoch ist die Strömung zu stark und du schaffst es nicht.");
         Ort = "E7";
     }
     else if (E7 == "2")
     {
         Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.WriteLine("Du bist nicht sehr hilfsbereit aber es war die bessere Entscheidung, da du nicht gegen die Strömung angekommen wärst");
+        SlowWriteLine("Du bist nicht sehr hilfsbereit aber es war die bessere Entscheidung, da du nicht gegen die Strömung angekommen wärst");
         Ort = "E7";
     }
 }
@@ -678,76 +385,10 @@ void Tod()
 void Gegenstandsauswahl()
 {
     // Logik für Start
-    
-
-    
-   
-
-    Console.ForegroundColor = ConsoleColor.Red;
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.Write("Sie ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.Write(" sind ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.Write(" auf ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.Write(" einer ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.Write(" einasamen ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.Write(" Insel ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.Write(" gestrandet ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.Write("und");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.Write(" dürfen");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.Write(" 3");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.Write(" Sachen ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.Write(" mitnehmen. ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.Write(" Welche ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Blue;
-    Console.Write(" wären ");
-    Thread.Sleep(100);
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.WriteLine(" das?");
-    Thread.Sleep(100);
-   
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    SlowWriteLine("Du bist auf einer einsamen Insel gestrandet und darst 3 Sachen mitnehmen. Welche wären das?");
 
 
     Console.ForegroundColor = ConsoleColor.White;
@@ -764,13 +405,13 @@ void Gegenstandsauswahl()
     Sache3 = Console.ReadLine();
     Console.ForegroundColor = ConsoleColor.White;
     Console.WriteLine("Die von dir ausgewählten Sachen sind:"  );
-    Console.WriteLine(Sache1);
-    Console.WriteLine(Sache2);
-    Console.WriteLine(Sache3);
+    Console.WriteLine("1:"+Sache1);
+    Console.WriteLine("2:"+Sache2);
+    Console.WriteLine("3:"+Sache3);
     Console.ForegroundColor = ConsoleColor.Yellow;
     if (Sache1 == Messer || Sache2 == Messer || Sache3 == Messer)
     {
-        Console.WriteLine("Gute Wahl, hätte ich genau so gemacht");
+        SlowWriteLine("Gute Wahl, hätte ich genau so gemacht");
         Ort = "E1";
     }
     else
@@ -784,7 +425,7 @@ void Gegenstandsauswahl()
 void E7()
 {
     Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.WriteLine("Zu guter Letzt,nachdem du zuhause bist, kannst du dich entscheiden, ob du zuerst heiß Baden gehst oder dir zuerst etwas zu Essen machst");
+    SlowWriteLine("Zu guter Letzt,nachdem du zuhause bist, kannst du dich entscheiden, ob du zuerst heiß Baden gehst oder dir zuerst etwas zu Essen machst");
     Console.ForegroundColor = ConsoleColor.White;
     Console.WriteLine("   /> //  __");
     Console.WriteLine("    ___/ \\// _/ /");
@@ -816,9 +457,9 @@ void E7()
     Console.WriteLine("      O  \\           _         /    (_)");
     Console.WriteLine("o   .     `-. .----<(o)_--. .-'");
     Console.WriteLine("   --------(_/------(_<_/--\\_)--------");
-    Console.ForegroundColor = ConsoleColor.Magenta;
+    Console.ForegroundColor = ConsoleColor.White;
     Console.WriteLine("Antwort:");
-    Console.ForegroundColor = ConsoleColor.Green;
+    Console.ForegroundColor = ConsoleColor.Cyan;
     string? E8 = Console.ReadLine();
     if (E8 == "Baden" || E8 == "baden")
     {
@@ -845,7 +486,7 @@ void SlowWriteLine(string message)
         Console.ForegroundColor = consoleColors[wordCount % 3];
         Console.Write(word);
         Console.Write(" ");
-        Thread.Sleep(100);
+        Thread.Sleep(175);
     }
     Console.WriteLine("");
 }
