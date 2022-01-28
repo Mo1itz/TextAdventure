@@ -11,9 +11,6 @@ string Ort = "Gegenstandsauswahl";
 string? Sache1, Sache2, Sache3;
 
 
-
-
-
 var startseite = new Startseite();
 Ort = startseite.Execute();
 startseite = new Startseite();
